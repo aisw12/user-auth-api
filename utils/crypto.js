@@ -21,8 +21,5 @@ async function verifyHash(str,hash) {
     return  jwt.sign(data, process.env.JWT_SECRET, { expiresIn: "7d" });
     
 }
- async function verifyToken(params) {
-    //
-    
-}
-module.exports={getHashedString,getToken,verifyToken,verifyHash}
+
+module.exports={getHashedString,getToken,verifyHash}

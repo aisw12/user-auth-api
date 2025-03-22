@@ -7,16 +7,9 @@ const {getHashedString,getToken,verifyToken}=require("../utils/crypto");
 const {registerUser,loginUser,getProfile}=require("../controllers/v1/auth");
 const router = express.Router();
 
-
-
 router.post('/register',registerUser)
 
-// Login User
 router.post("/login",loginUser )
- 
-
-       
-        
     
 router.get('/profile', authMiddleware, getProfile);
 

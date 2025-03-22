@@ -17,10 +17,10 @@ Security: bcrypt for password hashing, JWT for authentication
 API Endpoints
 
 User Registration
-http://localhost:5001/api/auth/profile
+http://localhost:5001/api/auth/register
 
 User Login
-http://localhost:5001/api/auth/profile
+http://localhost:5001/api/auth/login
 
 Get User Profile (Protected Route)
 http://localhost:5001/api/auth/profile
